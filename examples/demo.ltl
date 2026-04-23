@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_dda_line
+
+import std::io
+use ltl_dda_line as lib
+
+fn main() {
+    io::println("ltl_dda_line demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
